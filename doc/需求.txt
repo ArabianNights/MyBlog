@@ -1,5 +1,19 @@
 1.项目结构
-2.包依赖结构
-3.模块结构
-4.github
-	用户名：ArabianNights
+	/models	:模型层
+	/models/index.js	:模型层的调用接口文件
+	/bin/www	:入口程序
+	/doc		:项目相关文档
+	/public		:前端文件目录
+	/routes		:路由控制，相当于控制器
+	/views		:模板引擎文件夹
+	./.gitignore	:git提交时禁止的文件
+	./app.js		:配置express
+	./config.js	:基本配置服务器的文件
+2.运行
+	1.先运行mongo数据库
+	2.在文件夹下运行npm start或者其他自定义工具(node,grunt,supervisor)运行bin/www
+3.github
+	用户名	：ArabianNights
+	工程名	：MyBlog
+	git地址	：https://github.com/ArabianNights/MyBlog.git
+	成员	：iamllitog

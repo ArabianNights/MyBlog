@@ -32,7 +32,7 @@ app.use(session(
     })
 ));
 
-app.use('/',router);
+app.use('/',routes);
 
 
 
