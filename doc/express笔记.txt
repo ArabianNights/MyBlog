@@ -1,0 +1,12 @@
+express笔记
+1.connect-mongo的使用
+	var cookieParser = require('cookie-parser');
+	var session = require('express-session');
+	var MongoStore = require('connect-mongo')(session);
+	app.use(session(
+		_.assign(config.cookieConfig,{
+			store : new MongoStore(
+				{db : config.dbConfig.db}
+			)
+		})
+	));

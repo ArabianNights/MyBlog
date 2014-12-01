@@ -1,0 +1,6 @@
+lodash笔记
+1:	_.assign():	将两个对象合并在一起
+	var obj1 = { a : 'heihei'};
+	var obj2 = { b : 'gaga'};
+	var obj3 = _assign(obj1,obj2);
+	// obj3-->{a: 'heihei',b:'gaga'}
