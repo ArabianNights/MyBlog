@@ -9,9 +9,13 @@ mongoose.connect('mongodb://'+config.dbConfig.host+'/'+config.dbConfig.db,functi
 });
 
 //引入models
-// require('./user');
-// require('./articles');
+require('./admin');
+require('./articles');
+require('./comment');
+require('./visitor');
 
 //导出models,routes文件夹下的控制器可借此调用
-// exports.User = mongoose.model('User');
-// exports.Articles = mongoose.model('Articles');
+exports.Admin = mongoose.model('Admin');
+exports.Article = mongoose.model('Article');
+exports.Comment = mongoose.model('Comment');
+exports.Visitor = mongoose.model('Visitor');
